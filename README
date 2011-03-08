@@ -32,3 +32,10 @@ Generate client private key and Client Certificate Request (CSR):
 
 Sign CSR with CA (see <ca.config> as example):
 - openssl ca -config ca.config -in client01.csr -out client01.crt -batch
+
+aliases.cfg
+--------------
+Describe files aliases used.
+
+server.cfg
+--------------
