@@ -63,11 +63,9 @@ def check_aliases(base_dir, aliases):
 		fpath = base_dir + '/' + fname
 		if not fpath:
 			msg = 'aliases: empty file for key <%s>' % fkey
-			logging.error(msg)
 			raise RuntimeError(msg)
 		if not isfile(fpath):
 			msg = 'aliases: file <%s> not found for key <%s>' % (fpath,fkey,)
-			logging.error(msg)
 			raise RuntimeError(msg)
 	return 1
 
